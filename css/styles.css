@@ -188,8 +188,8 @@ body {
 }
 
 .site-nav .item-contact {
-  align-items: center;
   display: flex;
+  align-items: center;
 
   padding: 32px 0;
 }
