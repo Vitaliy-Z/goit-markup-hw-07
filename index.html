@@ -56,7 +56,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-text">эффективные решения для вашего бизнеса</h1>
-          <button class="button" data-open-modal>Заказать услугу</button>
+          <button data-open-modal class="button">Заказать услугу</button>
         </div>
       </section>
       <!-- Наши преимущества -->
@@ -361,92 +361,88 @@
     <!-- Подвал -->
     <footer class="footer">
       <div class="container">
-        <div class="elements">
-          <div class="footer-address">
-            <a href="./index.html" class="logo">
-              <span class="accent">Web</span> Studio
-            </a>
-            <!-- Адрес -->
-            <address class="address">
-              <b class="address-text">г. Киев, пр-т Леси Украинки, 26</b>
-              <ul>
-                <li>
-                  <a href="mailto:info@devstudio.com" class="link">
-                    info@devstudio.com
-                  </a>
-                </li>
-                <li>
-                  <a href="tel:+380961111111" class="link">
-                    +38 096 111 11 11
-                  </a>
-                </li>
-              </ul>
-            </address>
-          </div>
-          <!-- Ссылки на соц сети -->
-          <div class="social">
-            <b class="text-title">присоединяйтесь</b>
-            <ul class="elements">
-              <li class="footer-social">
-                <a href="" class="link" aria-label="Ссылка на instagram">
-                  <svg class="icon">
-                    <use href="./img/sprite.svg#icon-instagram"></use>
-                  </svg>
+        <div class="footer-address">
+          <a href="./index.html" class="logo">
+            <span class="accent">Web</span> Studio
+          </a>
+          <!-- Адрес -->
+          <address>
+            <ul class="address">
+              <li class="item">
+                <b class="text">г. Киев, пр-т Леси Украинки, 26</b>
+              </li>
+              <li class="item">
+                <a href="mailto:info@devstudio.com" class="post">
+                  info@devstudio.com
                 </a>
               </li>
-              <li class="footer-social">
-                <a href="" class="link" aria-label="Ссылка на twitter">
-                  <svg class="icon">
-                    <use href="./img/sprite.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer-social">
-                <a href="" class="link" aria-label="Ссылка на facebook">
-                  <svg class="icon">
-                    <use href="./img/sprite.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer-social">
-                <a href="" class="link" aria-label="Ссылка на linkedin">
-                  <svg class="icon">
-                    <use href="./img/sprite.svg#icon-linkedin"></use>
-                  </svg>
+              <li class="item">
+                <a href="tel:+380961111111" class="tel">
+                  +38 096 111 11 11
                 </a>
               </li>
             </ul>
-          </div>
-          <!-- Форма на рассылку -->
-          <div class="mailing">
-            <b class="text-title">Подпишитесь на рассылку</b>
-            <form class="js-speaker-form">
-              <input
-                type="email"
-                name="E-mail"
-                placeholder="E-mail"
-                autocomplete="email"
-                class="input"
-              />
-              <button type="submit" class="btn-submit">
-                Подписаться
-                <svg class="icon">
-                  <use href="./img/sprite.svg#icon-mailing"></use>
-                </svg>
-              </button>
-            </form>
-          </div>
+          </address>
         </div>
-        <div class="copyright">
-          <p>2020 | Developed by GoIT Students</p>
+        <!-- Ссылки на соц сети -->
+        <div class="social">
+          <b class="title-text">присоединяйтесь</b>
+          <ul class="elements">
+            <li class="item">
+              <a href="" class="link" aria-label="Ссылка на instagram">
+                <svg class="icon">
+                  <use href="./img/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link" aria-label="Ссылка на twitter">
+                <svg class="icon">
+                  <use href="./img/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link" aria-label="Ссылка на facebook">
+                <svg class="icon">
+                  <use href="./img/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link" aria-label="Ссылка на linkedin">
+                <svg class="icon">
+                  <use href="./img/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Форма на рассылку -->
+        <div class="mailing">
+          <b class="title-text">Подпишитесь на рассылку</b>
+          <form class="js-speaker-form">
+            <input
+              type="email"
+              name="E-mail"
+              placeholder="E-mail"
+              autocomplete="email"
+              class="input"
+            />
+            <button type="submit" class="btn-submit">
+              Подписаться
+              <svg class="icon">
+                <use href="./img/sprite.svg#icon-mailing"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
-
     <!-- Модалка -->
-    <div class="backdrop is-hidden" data-backdrop>
+    <div data-backdrop class="backdrop is-hidden">
       <div class="modal">
-        <b class="text-title">Оставьте свои данные, мы вам перезвоним</b>
+        <b class="title-text">Оставьте свои данные, мы вам перезвоним</b>
         <form class="js-speaker-form" autocomplete="off">
           <ul class="form">
             <li class="item">
@@ -505,7 +501,7 @@
             <input
               type="checkbox"
               name="consent"
-              value="consent"
+              value="agreement"
               id="consent"
               class="checkbox"
             />
@@ -524,7 +520,6 @@
         </button>
       </div>
     </div>
-
     <!-- Скрипт для модалки -->
     <script>
       const refs = {
@@ -546,7 +541,6 @@
         console.log("Это клик в бекдроп");
       }
     </script>
-
     <!-- Скрипт для отправки формы -->
     <script>
       (() => {

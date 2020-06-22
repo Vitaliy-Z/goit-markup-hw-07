@@ -65,3 +65,15 @@
 
   color: $textColor;
 }
+
+%btn-text {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+
+  color: #fff;
+  background: $accentColor;
+}
